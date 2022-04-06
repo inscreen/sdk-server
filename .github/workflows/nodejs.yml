@@ -1,0 +1,33 @@
+name: Node.js
+
+on: [pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          lfs: true
+      - run: |
+          cd js
+          npm ci
+      - run: |
+          cd js
+          npm pack
+
+  dependencies:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          lfs: true
+      - run: |
+          cd js
+          npm ci
+      - run: |
+          cd js
+          npm audit
+      - run: |
+          cd js
+          npx license-checker --onlyAllow 'MIT;BSD-3-Clause;BSD-2-Clause;Apache-2.0;ISC;Python-2.0;0BSD'
