@@ -4,7 +4,8 @@ export type InScreenSession = {
     v: 1;
     userId: string;
     teamId: string;
-    timestamp: Date;
+    /** Optional, default: now */
+    timestamp?: Date;
 };
 
 export function createInScreenToken(apiKey: string, session: InScreenSession): string {
@@ -13,7 +14,7 @@ export function createInScreenToken(apiKey: string, session: InScreenSession): s
     const a = cipher.update(
         JSON.stringify({
             ...session,
-            timestamp: Math.floor(session.timestamp.valueOf() / 1000),
+            timestamp: Math.floor((session.timestamp ?? new Date()).valueOf() / 1000),
         }),
         'utf8',
     );
