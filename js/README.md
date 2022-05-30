@@ -2,6 +2,8 @@
 
 A changelog is available in the [GitHub releases page](https://github.com/inscreen/sdk-server/releases).
 
+A feature comparison between different SDKs can be found in the [global README](https://github.com/inscreen/sdk-server/blob/main/README.md).
+
 ### createInScreenToken
 
 Use this method to create secure session tokens for inScreen.

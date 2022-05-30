@@ -45,5 +45,12 @@
   "gitlens.showWelcomeOnInstall": false,
   "gitlens.plusFeatures.enabled": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "eslint.workingDirectories": [{ "directory": "js", "changeProcessCWD": true }]
+  "eslint.workingDirectories": [
+    {
+      "directory": "js",
+      "changeProcessCWD": true
+    }
+  ],
+  "esbonio.sphinx.confDir": "",
+  "python.envFile": "${workspaceFolder}/python/.env"
 }
