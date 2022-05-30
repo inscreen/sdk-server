@@ -11,4 +11,4 @@
 
 rm -fr ./dist
 tox -e build,publish
-# tox -e publish -- --repository pypi
+# tox -e build && tox -e publish -- --repository pypi
