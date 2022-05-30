@@ -1,0 +1,38 @@
+name: Python
+
+on: [pull_request]
+
+jobs:
+  python_build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          lfs: true
+      - uses: actions/setup-python@v3
+        with:
+          python-version: 3.8
+      - run: |
+          cd python
+          python -m venv .
+          source ./bin/activate
+          pip install -U pip setuptools tox esbonio
+          pip install -e .
+          tox
+
+  python_lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          lfs: true
+      - uses: actions/setup-python@v3
+        with:
+          python-version: 3.8
+      - run: |
+          cd python
+          python -m venv .
+          source ./bin/activate
+          pip install -U pip setuptools tox esbonio
+          pip install -e .
+          tox -e lint

@@ -1,0 +1,5 @@
+- [ ] I updated README.md, e.g. the feature matrix.
+- [ ] I selected a version number that makes sense for **all** languages.
+- [ ] I updated Node.js.
+- [ ] I updated Python.
+- [ ] I included the changelog entry in the body of this pull request, for review & approval.
