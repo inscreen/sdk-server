@@ -1,5 +1,7 @@
 import sys
 
+__all__ = ['create_inscreen_token']
+
 from inscreen_sdk_server.auth import create_inscreen_token
 
 if sys.version_info[:2] >= (3, 8):
