@@ -30,6 +30,7 @@ Patch version increments happen in all cases other than major or minor version i
             <th align="center">Sub-feature</th>
             <th align="center">Node.js</th>
             <th align="center">Python</th>
+            <th align="center">Kotlin</th>
         </tr>
     </thead>
     <tbody>
@@ -38,9 +39,11 @@ Patch version increments happen in all cases other than major or minor version i
             <td>Basic usage</td>
             <td align="center">0.1.0</td>
             <td align="center">0.1.1</td>
+            <td align="center">0.1.1</td>
         </tr>
         <tr>
             <td>Optional timestamp</td>
+            <td align="center">0.1.1</td>
             <td align="center">0.1.1</td>
             <td align="center">0.1.1</td>
         </tr>
