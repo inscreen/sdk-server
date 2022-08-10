@@ -1,0 +1,5 @@
+# Used by Kotlin and JitPack.io
+jdk:
+  - openjdk11
+install:
+  - bash -c 'cd kotlin/ && ./gradlew build publishToMavenLocal'

@@ -1,3 +1,7 @@
+github:
+  prebuilds:
+    addCheck: false
+
 tasks:
   - name: js
     init: |
@@ -5,6 +9,7 @@ tasks:
       npm install -g npm
       npm install
     command: |
+      sudo apt install tig
       npm install -g npm eslint prettier
   - name: python
     command: |
@@ -15,6 +20,11 @@ tasks:
       pip install -U pip setuptools tox esbonio
       pip install -e .
       tox
+  - name: kotlin
+    command: |
+      cd kotlin
+      curl -sSLO https://github.com/pinterest/ktlint/releases/download/0.46.1/ktlint && chmod a+x ktlint
+      ./gradlew build
 
 gitConfig:
   alias.co: checkout
@@ -34,3 +44,4 @@ vscode:
     - ms-python.python
     - lextudio.restructuredtext
     - trond-snekvik.simple-rst
+    - mathiasfrohlich.kotlin

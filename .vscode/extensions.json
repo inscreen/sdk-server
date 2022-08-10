@@ -7,6 +7,7 @@
     "graphql.vscode-graphql",
     "ms-python.python",
     "lextudio.restructuredtext",
-    "trond-snekvik.simple-rst"
+    "trond-snekvik.simple-rst",
+    "mathiasfrohlich.kotlin"
   ]
 }
