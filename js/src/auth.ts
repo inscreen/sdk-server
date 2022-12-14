@@ -6,6 +6,10 @@ export type InScreenSession = {
     teamId: string;
     /** Optional, default: now */
     timestamp?: Date;
+    /** Optional, default: [] */
+    additionalTeamIds?: string[];
+    /** Optional, default: [] */
+    additionalTeamLinks?: string[];
 };
 
 export function createInScreenToken(apiKey: string, session: InScreenSession): string {

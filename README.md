@@ -47,5 +47,11 @@ Patch version increments happen in all cases other than major or minor version i
             <td align="center">0.1.1</td>
             <td align="center">0.1.1</td>
         </tr>
+        <tr>
+            <td>Additional team IDs and team links</td>
+            <td align="center">0.1.2</td>
+            <td align="center">0.1.2</td>
+            <td align="center">0.1.2</td>
+        </tr>
     </tbody>
 </table>
