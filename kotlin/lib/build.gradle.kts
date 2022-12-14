@@ -1,5 +1,5 @@
 group = "com.inscreen"
-version = "0.1.1" // Update below too
+version = "0.1.2" // Update below too
 
 plugins {
     kotlin("jvm") version "1.7.10"
@@ -33,7 +33,7 @@ publishing {
         create<MavenPublication>("mavenJava") {
             groupId = "com.inscreen"
             artifactId = "sdkserver"
-            version = "0.1.1" // Update above too
+            version = "0.1.2" // Update above too
 
             pom {
                 name.set("inScreen server-side SDK")
