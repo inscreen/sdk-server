@@ -35,7 +35,7 @@ Patch version increments happen in all cases other than major or minor version i
     </thead>
     <tbody>
         <tr>
-            <td rowspan="2"><code>createInScreenToken</code></td>
+            <td rowspan="3"><code>createInScreenToken</code></td>
             <td>Basic usage</td>
             <td align="center">0.1.0</td>
             <td align="center">0.1.1</td>
