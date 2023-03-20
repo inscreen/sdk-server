@@ -1,0 +1,13 @@
+name: Checklist
+
+on:
+  pull_request:
+    types: [opened, edited, synchronize]
+jobs:
+  enforce-checklist:
+    timeout-minutes: 5
+    runs-on: ubuntu-latest
+    steps:
+      - uses: mheap/require-checklist-action@v2
+        with:
+          requireChecklist: false
